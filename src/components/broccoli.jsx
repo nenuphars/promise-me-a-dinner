@@ -5,6 +5,7 @@ const Broccoli = () => {
 	const [broccoli, setBroccoli] = useState([]);
 
 	const getData = async () => {
+		setBroccoli(() => [])
 		const food = 'broccoli';
 		try {
 			const step1 = await obtainInstruction(food, 0);

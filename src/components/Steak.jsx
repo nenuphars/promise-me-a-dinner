@@ -5,6 +5,7 @@ const Steak = () => {
 	const [steak, setSteak] = useState([]);
 
 	const getData = () => {
+		setSteak(() => [])
 		const food = 'steak';
 		obtainInstruction(food, 0)
 			.then((step1) => {
