@@ -5,6 +5,7 @@ const BrusselSprouts = () => {
 	const [brusselSprouts, setBrusselSprouts] = useState([]);
 
 	const getData = () => {
+		setBrusselSprouts(() => [])
 		const food = 'brusselsSprouts';
 		const brusselsSteps = [
 			obtainInstruction(food, 0),
