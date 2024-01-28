@@ -60,45 +60,10 @@ function useMashedPotatoes() {
 			},
 			(error) => console.log(error)
 		);
-		// 	getInstruction(
-		// 		'mashedPotatoes',
-		// 		0,
-		// 		(step1) => {
-		// 			addItem(step1);
-		// 			getInstruction(
-		// 				'mashedPotatoes',
-		// 				1,
-		// 				(step2) => {
-		// 					addItem(step2);
-		// 					getInstruction(
-		// 						'mashedPotatoes',
-		// 						2,
-		// 						(step3) => {
-		// 							addItem(step3);
-		// 							getInstruction(
-		// 								'mashedPotatoes',
-		// 								3,
-		// 								(step4) => {
-		// 									addItem(step4);
-		// 									getInstruction('mashedPotatoes', 4, (step5) => {
-		// 										addItem(step5);
-		// 									});
-		// 								},
-		// 								(error) => console.log(error)
-		// 							);
-		// 						},
-		// 						(error) => console.log(error)
-		// 					);
-		// 				},
-		// 				(error) => console.log(error)
-		// 			);
-		// 		},
-		// 		(error) => console.log(error)
-		// 	);
-		// };
+		
+		// Don't change the code below this line
 	}
 
-	// Don't change the code below this line
   return [mashedPotatoes, getMashedInstructions]
 }
 
