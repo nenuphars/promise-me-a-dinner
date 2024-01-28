@@ -10,6 +10,15 @@ Due to the asynchronous nature of JavaScript, promises and callbacks are very im
 
 - Fork this repo
 - Clone this repo
+- Open the LAB and start:
+  
+```bash
+cd promise-me-a-dinner-vite
+npm install
+npm run dev
+```
+
+- On your terminal type `o` and press enter to open the page in the browser.
 
 ## Submission
 
@@ -52,7 +61,8 @@ We provided you with some starter code:
   >
 
 - `App.jsx` - contains the basic structure needed so no need to add any code there. Previously mentioned JavaScript files are already linked to the `App.jsx`.
-  > :exclamation: **You should not make any changes to this file.**
+  >
+  :exclamation: **You should not make any changes to this file.**
 
 ### Out of sync
 
@@ -60,23 +70,16 @@ We provided you with some starter code:
 
 Now, open the file `hooks/useMashedPotatoes.js` and take a look at the starter code provided there. The provided code doesn't use nested callbacks to enforce a sequence of execution, which is why the steps are not displayed in the correct order.
 
-Go ahead and run
-
-```shell
-  $ npm run dev
-```
-
-- On your terminal type `o` and press enter to open the page in the browser.
 - Click the button `Make a Dinner`.
 - Notice how the cooking steps are displayed out of order.
 
 :exclamation: Before you start working on Iteration 1, comment out the initial code in `hooks/useMashedPotatoes.js`.
 
-<br>
+</br>
 
 ## Iteration 1 | Make the mashed potatoes with callbacks
 
-Using nested callbacks print the cooking steps to make Mashed Potatoes in the correct order. Write your JavaScript in the provided `javascript/index.js` file. Once again, a reminder not to alter the `getInstruction.js` file.
+Using nested callbacks print the cooking steps to make Mashed Potatoes in the correct order. Write your JavaScript in the provided `hooks/useMashedPotatoes.js` file. Once again, a reminder not to alter the `getInstruction.js` file.
 
 ```javascript
 // Iteration 1 - using callbacks
@@ -87,7 +90,7 @@ getInstruction('mashedPotatoes', 0, (step0) => {
 });
 ```
 
-After the last step, you should display an additional `<li>` with the text: `Mashed potatoes are ready!`.
+After the last step, you should display an additional step with the text: `Mashed potatoes are ready!`.
 
 ## Iteration 2 | Make the stake with promises
 
@@ -104,7 +107,7 @@ obtainInstruction('steak', 0).then((step0) => {
 // ... Your code here
 ```
 
-After the last step, you should display an additional `<li>` with the text: `Steak is ready!`.
+After the last step, you should display an additional step with the text: `Steak is ready!`.
 
 ## Iteration 3 | Make the broccoli with async/await
 
@@ -116,7 +119,7 @@ async function getBroccoliInstructions() {
 }
 ```
 
-After the last step, you should display an additional `<li>` with the text: `Broccoli is ready!`.
+After the last step, you should display an additional step with the text: `Broccoli is ready!`.
 
 ## Bonus 1
 
@@ -126,6 +129,6 @@ Only when the specific food is ready to be served (all steps are listed), show t
 
 Using `Promise.all` display the cooking steps to make Brussels Sprouts in the correct order.
 
-After the last step, you should display an additional `<li>` with the text: `Brussels sprouts are ready!`.
+After the last step, you should display an additional step with the text: `Brussels sprouts are ready!`.
 
 **Happy coding!** :blue_heart:
